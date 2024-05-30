@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="log-in">
+    <div class="log-inFORM" id="log-inFORM">
+      <form class="log-inFORMcont" id="log-inFORMcont">
+          <h1>LOG-IN</h1>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required >
+
+          <br><label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required >
+
+          <p>Don't have an account yet? <a onclick="openForm()" id="italics">Sign-up.</a></p>
+
+    
+      </form>
+  </div>
+
+
+
+    <div class="form-popup" id="myForm">
+        <form class="form-container" id="loginForm">
+            <fieldset>
+                <legend>fill-in details</legend>
+                <h1>SIGN-UP</h1>
+                
+                <div class="names">
+                    <input type="text" name="" placeholder="Enter First Name" id="firstName" required>
+                    <input type="text" name="" placeholder="Enter Last Name" id="lastName" required>
+                </div>
+
+                <div id="gender">
+                    <div class="gender-option">
+                        <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label> 
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label> 
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="PFNT" name="gender" value="PreferNotToSay"><label for="PFNT">Prefer not to say</label> 
+                    </div>
+                </div>
+                <br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="email" required >
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required id="passWord">
+
+                <label for="contactNum"><b>Contact Number</b></label>
+                <input type="text" name="" id="contactNum" placeholder="09XX XXX XXXX">
+        
+                <label for=""><b>Why do you support this advocacy?</b></label> <br>
+                <textarea id="reasons" name="Reason" rows="" cols="30" class="box" required></textarea>
+                
+                <div id="buttons">
+                    <button type="button" class="btn cancel" onclick="closeForm()" id="closeup">CLOSE</button>
+                    <button type="submit" class="btn" id="popup">SIGN-UP</button>
+                </div>
+
+              
+              </fieldset>
+
+        </form>
+            
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
+
+
